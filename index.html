@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BTC Strategy Dashboard</title>
+    <title>Crypto Strategy Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
         <header>
 
             <div>
-                <h1>BTC Strategy Dashboard</h1>
+                <h1>Crypto Strategy Dashboard</h1>
                 <p id="market-info">Loading...</p>
             </div>
 
@@ -29,41 +29,87 @@
         </header>
 
 
-        <!-- TradingView Chart -->
-        <section class="chart-section">
+        <!-- Charts -->
+        <section class="charts-section">
 
-            <div class="chart-header">
-                <h2>BTCUSDT</h2>
-                <span>12H</span>
+            <!-- BTC -->
+            <div class="chart-section">
+
+                <div class="chart-header">
+                    <h2>BTCUSDT</h2>
+                    <span>12H</span>
+                </div>
+
+                <div class="tradingview-widget-container">
+
+                    <div class="tradingview-widget-container__widget"></div>
+
+                    <script
+                        type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+                        async
+                    >
+                    {
+                        "autosize": true,
+                        "symbol": "BINANCE:BTCUSDT",
+                        "interval": "12H",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "withdateranges": true,
+                        "hide_side_toolbar": true,
+                        "allow_symbol_change": false,
+                        "save_image": false,
+                        "hide_top_toolbar": false,
+                        "hide_legend": false,
+                        "hide_volume": false,
+                        "calendar": false,
+                        "support_host": "https://www.tradingview.com"
+                    }
+                    </script>
+
+                </div>
+
             </div>
 
-            <div class="tradingview-widget-container">
 
-                <div class="tradingview-widget-container__widget"></div>
+            <!-- ETH -->
+            <div class="chart-section">
 
-                <script
-                    type="text/javascript"
-                    src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
-                    async
-                >
-                {
-                    "autosize": true,
-                    "symbol": "BINANCE:BTCUSDT",
-                    "interval": "12H",
-                    "timezone": "Etc/UTC",
-                    "theme": "dark",
-                    "style": "1",
-                    "withdateranges": true,
-                    "hide_side_toolbar": true,
-                    "allow_symbol_change": false,
-                    "save_image": false,
-                    "hide_top_toolbar": false,
-                    "hide_legend": false,
-                    "hide_volume": false,
-                    "calendar": false,
-                    "support_host": "https://www.tradingview.com"
-                }
-                </script>
+                <div class="chart-header">
+                    <h2>ETHUSDT</h2>
+                    <span>12H</span>
+                </div>
+
+                <div class="tradingview-widget-container">
+
+                    <div class="tradingview-widget-container__widget"></div>
+
+                    <script
+                        type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+                        async
+                    >
+                    {
+                        "autosize": true,
+                        "symbol": "BINANCE:ETHUSDT",
+                        "interval": "12H",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "withdateranges": true,
+                        "hide_side_toolbar": true,
+                        "allow_symbol_change": false,
+                        "save_image": false,
+                        "hide_top_toolbar": false,
+                        "hide_legend": false,
+                        "hide_volume": false,
+                        "calendar": false,
+                        "support_host": "https://www.tradingview.com"
+                    }
+                    </script>
+
+                </div>
 
             </div>
 

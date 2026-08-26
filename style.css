@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 40px 20px;
 }
@@ -58,11 +58,18 @@ h2 {
 
 
 /* =========================
-   TRADINGVIEW CHART
+   CHARTS
    ========================= */
 
-.chart-section {
+.charts-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     margin-bottom: 50px;
+}
+
+.chart-section {
+    min-width: 0;
 }
 
 .chart-header {
@@ -130,7 +137,11 @@ h2 {
    MOBILE
    ========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+
+    .charts-section {
+        grid-template-columns: 1fr;
+    }
 
     .strategy-grid {
         grid-template-columns: 1fr;
@@ -147,6 +158,6 @@ h2 {
     }
 
     .tradingview-widget-container {
-        height: 400px;
+        height: 450px;
     }
 }
