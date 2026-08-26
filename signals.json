@@ -5,7 +5,7 @@
     "strategies": {
         "strategy_01": {
             "signal": "NO_SIGNAL",
-            "price": 99999.99,
+            "price": 88888.99,
             "candle_time": "2026-08-26T12:00:00+00:00"
         }
     }
