@@ -15,11 +15,16 @@ body {
     padding: 40px 20px;
 }
 
+
+/* =========================
+   HEADER
+   ========================= */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -28,7 +33,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 #market-info {
@@ -50,6 +55,44 @@ h2 {
     font-size: 13px;
     color: #777;
 }
+
+
+/* =========================
+   TRADINGVIEW CHART
+   ========================= */
+
+.chart-section {
+    margin-bottom: 50px;
+}
+
+.chart-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.chart-header h2 {
+    margin: 0;
+}
+
+.chart-header span {
+    font-size: 13px;
+    color: #777;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tradingview-widget-container {
+    width: 100%;
+    height: 500px;
+}
+
+
+/* =========================
+   STRATEGIES
+   ========================= */
 
 .strategy-grid {
     display: grid;
@@ -82,7 +125,13 @@ h2 {
     line-height: 1.8;
 }
 
+
+/* =========================
+   MOBILE
+   ========================= */
+
 @media (max-width: 800px) {
+
     .strategy-grid {
         grid-template-columns: 1fr;
     }
@@ -95,5 +144,9 @@ h2 {
 
     .price-box {
         text-align: left;
+    }
+
+    .tradingview-widget-container {
+        height: 400px;
     }
 }
