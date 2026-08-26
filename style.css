@@ -62,13 +62,16 @@ h2 {
    ========================= */
 
 .charts-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 20px;
+    width: 100%;
     margin-bottom: 50px;
 }
 
 .chart-section {
+    flex: 1 1 0;
+    width: 50%;
     min-width: 0;
 }
 
@@ -140,7 +143,11 @@ h2 {
 @media (max-width: 900px) {
 
     .charts-section {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .chart-section {
+        width: 100%;
     }
 
     .strategy-grid {
