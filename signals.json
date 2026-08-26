@@ -1,0 +1,12 @@
+{
+    "generated_at": "2026-08-26T19:19:09.993591+00:00",
+    "symbol": "BTCUSDT",
+    "timeframe": "12h",
+    "strategies": {
+        "strategy_01": {
+            "signal": "NO_SIGNAL",
+            "price": 78435.58,
+            "candle_time": "2026-08-26T12:00:00+00:00"
+        }
+    }
+}
