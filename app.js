@@ -1,6 +1,7 @@
 async function loadSignals() {
     try {
-        const response = await fetch("signals.json");
+        // Add timestamp to prevent browser caching
+        const response = await fetch("signals.json?t=" + Date.now());
 
         if (!response.ok) {
             throw new Error("Could not load signals.json");
@@ -24,11 +25,16 @@ function displayMarketInfo(data) {
     document.getElementById("market-info").textContent =
         `${data.symbol} • ${data.timeframe}`;
 
-    document.getElementById("btc-price").textContent =
-        `$${data.strategies.strategy_01.price.toLocaleString("en-US", {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2
-        })}`;
+    // Use the price from the first strategy
+    const firstStrategy = Object.values(data.strategies)[0];
+
+    if (firstStrategy) {
+        document.getElementById("btc-price").textContent =
+            `$${firstStrategy.price.toLocaleString("en-US", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            })}`;
+    }
 
     const generatedAt = new Date(data.generated_at);
 
@@ -72,4 +78,8 @@ function displayStrategies(data) {
 }
 
 
+// Load immediately when the page opens
 loadSignals();
+
+// Check for new signals every 5 minutes
+setInterval(loadSignals, 5 * 60 * 1000);
