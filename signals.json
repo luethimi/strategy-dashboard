@@ -1,37 +1,61 @@
 {
-    "generated_at": "2026-08-26T20:06:13.544029+00:00",
+    "generated_at": "2026-08-28T08:34:21.479779+00:00",
     "symbol": "BTCUSDT",
     "timeframe": "12h",
     "strategies": {
         "strategy_01": {
-            "signal": "NO_SIGNAL",
-            "price": 78506.06,
-            "candle_time": "2026-08-26T12:00:00+00:00"
+            "state": {
+                "position": "FLAT",
+                "entry_price": null,
+                "stop_loss": null,
+                "take_profit": null
+            },
+            "history": []
         },
         "strategy_02": {
-            "signal": "NO_SIGNAL",
-            "price": 78506.06,
-            "candle_time": "2026-08-26T12:00:00+00:00"
+            "state": {
+                "position": "FLAT",
+                "entry_price": null,
+                "stop_loss": null,
+                "take_profit": null
+            },
+            "history": []
         },
         "strategy_03": {
-            "signal": "NO_SIGNAL",
-            "price": 78506.06,
-            "candle_time": "2026-08-26T12:00:00+00:00"
+            "state": {
+                "position": "FLAT",
+                "entry_price": null,
+                "stop_loss": null,
+                "take_profit": null
+            },
+            "history": []
         },
         "strategy_04": {
-            "signal": "NO_SIGNAL",
-            "price": 78506.06,
-            "candle_time": "2026-08-26T12:00:00+00:00"
+            "state": {
+                "position": "FLAT",
+                "entry_price": null,
+                "stop_loss": null,
+                "take_profit": null
+            },
+            "history": []
         },
         "strategy_05": {
-            "signal": "NO_SIGNAL",
-            "price": 78506.06,
-            "candle_time": "2026-08-26T12:00:00+00:00"
+            "state": {
+                "position": "FLAT",
+                "entry_price": null,
+                "stop_loss": null,
+                "take_profit": null
+            },
+            "history": []
         },
         "strategy_06": {
-            "signal": "NO_SIGNAL",
-            "price": 78506.06,
-            "candle_time": "2026-08-26T12:00:00+00:00"
+            "state": {
+                "position": "FLAT",
+                "entry_price": null,
+                "stop_loss": null,
+                "take_profit": null
+            },
+            "history": []
         }
     }
 }
