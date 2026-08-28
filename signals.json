@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-28T08:34:21.479779+00:00",
+    "generated_at": "2026-08-28T08:47:47.575532+00:00",
     "symbol": "BTCUSDT",
     "timeframe": "12h",
     "strategies": {
@@ -10,7 +10,8 @@
                 "stop_loss": null,
                 "take_profit": null
             },
-            "history": []
+            "history": [],
+            "last_processed_candle": "2026-08-27T12:00:00+00:00"
         },
         "strategy_02": {
             "state": {
@@ -19,7 +20,8 @@
                 "stop_loss": null,
                 "take_profit": null
             },
-            "history": []
+            "history": [],
+            "last_processed_candle": "2026-08-27T12:00:00+00:00"
         },
         "strategy_03": {
             "state": {
@@ -28,7 +30,8 @@
                 "stop_loss": null,
                 "take_profit": null
             },
-            "history": []
+            "history": [],
+            "last_processed_candle": "2026-08-27T12:00:00+00:00"
         },
         "strategy_04": {
             "state": {
@@ -37,7 +40,8 @@
                 "stop_loss": null,
                 "take_profit": null
             },
-            "history": []
+            "history": [],
+            "last_processed_candle": "2026-08-27T12:00:00+00:00"
         },
         "strategy_05": {
             "state": {
@@ -46,7 +50,8 @@
                 "stop_loss": null,
                 "take_profit": null
             },
-            "history": []
+            "history": [],
+            "last_processed_candle": "2026-08-27T12:00:00+00:00"
         },
         "strategy_06": {
             "state": {
@@ -55,7 +60,8 @@
                 "stop_loss": null,
                 "take_profit": null
             },
-            "history": []
+            "history": [],
+            "last_processed_candle": "2026-08-27T12:00:00+00:00"
         }
     }
 }
